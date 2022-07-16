@@ -5,75 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./words.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Word Guess</title>
 
-    <style>
-        table{
-            margin-left: auto;
-            margin-right: auto;
-        }
-        td{
-            border: 1px solid;
-            padding: 35px;   
-            cursor: pointer;
-        }
-    </style>
+    
 </head>
 <body>
+    <button onClick="one()" id="start">Start The Game</button>
+
+    <div class="input-group">
+        <input type="text" class="form-control" id="screen" readonly>
+        <span class="input-group-text" id="del" onclick="del()">X</span>
+      </div>
+
+
+<div id="hide">
     <table>
         <tr>
-            <td onClick="one()" id="one"></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td onClick="valueButton1()"  id="one"></td>
+            <td onClick="valueButton2()"  id="two"></td>
+            <td onClick="valueButton3()"  id="3"></td>
+            <td onClick="valueButton4()"  id="4"></td>
+            <td onClick="valueButton5()"  id="5"></td>
+            <td onClick="valueButton6()"  id="6"></td>
             
         </tr>
 
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td onClick="valueButton7()"  id="7"></td>
+            <td onClick="valueButton8()"  id="8"></td>
+            <td onClick="valueButton9()"  id="9"></td>
+            <td onClick="valueButton10()"  id="10"></td>
+            <td onClick="valueButton11()"  id="11"></td>
+            <td onClick="valueButton12()"  id="12"></td>
             
         </tr>
 
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td onClick="valueButton13()"  id="13"></td>
+            <td onClick="valueButton14()"  id="14"></td>
+            <td onClick="valueButton15()"  id="15"></td>
+            <td onClick="valueButton16()"  id="16"></td>
+            <td onClick="valueButton17()"  id="17"></td>
+            <td onClick="valueButton18()"  id="18"></td>
            
         </tr>
 
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td onClick="valueButton19()"  id="19"></td>
+            <td onClick="valueButton20()"  id="20"></td>
+            <td onClick="valueButton21()"  id="21"></td>
+            <td onClick="valueButton22()"  id="22"></td>
+            <td onClick="valueButton23()"  id="23"></td>
+            <td onClick="valueButton24()"  id="24"></td>
             
         </tr>
 
         <tr>
-            <td></td>
-            <td></td>
-           
-           
+            <td onClick="valueButton25()"  id="25"></td>
+            <td onClick="valueButton26()"  id="26"></td> 
         </tr>
 
-       
+        
+        
+
+            
+        
+
+    </table> 
+
+</div>
+<button onClick="reset()" id="reset">Reset</button>
+
+    <button onClick="submit()">Submit</button>
+
+    <h3>Points <span id="point"></span></h3>
 
 
 
 
-    </table>
+
+
+
+
+
 
     
 
