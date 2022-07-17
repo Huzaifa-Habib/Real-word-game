@@ -29,10 +29,17 @@ var _26;
 var hide= document.getElementById("hide")
 hide.style.display="none"
 
+var submitt= document.getElementById("submit")
+submitt.style.display="none"
+
+
+
 
 // For Generating random letters at each box
 function one(){
     hide.style.display="block"
+    submitt.style.display="block"
+
 
 
 
@@ -266,9 +273,12 @@ function submit () {
     var input =document.getElementById("screen").value;
     input=input.toLowerCase();
 
+
     for (var k = 0; k < Dictonery.length; k++) {
         if (input === Dictonery[k]){
             document.getElementById("point").innerText=points++
+            document.getElementById("words").innerHTML+="." + input + "</br>"
+
         }
 
         // else {
@@ -279,9 +289,16 @@ function submit () {
     }
 
 
+    
+
+
     if (input.length <= 1 || input.length > 20) {
         alert("Word should be greater than 1 and under 15 characters")
     }
+
+    var text=document.getElementById("screen").value
+    document.getElementById("screen").value=""
+
 
  
 }
@@ -305,7 +322,19 @@ function reset () {
 
 
     
+function greeting(){
+    hide.style.display="none"
+    var text=document.getElementById("screen").value
+    document.getElementById("screen").value=""
+    document.getElementById("point").innerText=""
+    document.getElementById("words").innerText=""
 
+
+
+
+  }
+  
+  setTimeout(greeting, 60000);
 
 
     
