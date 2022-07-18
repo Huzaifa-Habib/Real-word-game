@@ -32,16 +32,10 @@ hide.style.display="none"
 var submitt= document.getElementById("submit")
 submitt.style.display="none"
 
-
-
-
 // For Generating random letters at each box
 function one(){
     hide.style.display="block"
     submitt.style.display="block"
-
-
-
 
     var show = randomLetters [Math.floor(Math.random() * 26 )]
      _1 = document.getElementById("one").innerText=show
@@ -132,135 +126,186 @@ function one(){
 // Get value of each box in input
 function valueButton1 () {
     var calculatedResult=document.getElementById("screen")
+    var a=document.getElementById("one")
+    a.style.textDecoration="line-through"
     calculatedResult.value +=_1
 
-    
 }
 
 function valueButton2 () {
     var calculatedResult=document.getElementById("screen")
+    var b=document.getElementById("two")
+    b.style.textDecoration="line-through"
     calculatedResult.value +=_2
 
 }
 
 function valueButton3 () {
     var calculatedResult=document.getElementById("screen")
+    var c=document.getElementById("3")
+    c.style.textDecoration="line-through"
     calculatedResult.value +=_3
 
 }
 
 function valueButton4 () {
     var calculatedResult=document.getElementById("screen")
+    var d=document.getElementById("4")
+    d.style.textDecoration="line-through"
     calculatedResult.value +=_4
 
 }
 function valueButton5 () {
     var calculatedResult=document.getElementById("screen")
+    var e=document.getElementById("5")
+    e.style.textDecoration="line-through"
     calculatedResult.value +=_5
 
 }
 function valueButton6 () {
     var calculatedResult=document.getElementById("screen")
+    var f=document.getElementById("6")
+    f.style.textDecoration="line-through"
     calculatedResult.value +=_6
 
 }
 function valueButton7 () {
     var calculatedResult=document.getElementById("screen")
+    var g=document.getElementById("7")
+    g.style.textDecoration="line-through"
     calculatedResult.value +=_7
 
 }
 function valueButton8 () {
     var calculatedResult=document.getElementById("screen")
+    var h=document.getElementById("8")
+    h.style.textDecoration="line-through"
     calculatedResult.value +=_8
 
 }
 function valueButton9 () {
     var calculatedResult=document.getElementById("screen")
+    var i=document.getElementById("9")
+    i.style.textDecoration="line-through"
     calculatedResult.value +=_9
 
 }
 function valueButton10 () {
     var calculatedResult=document.getElementById("screen")
+     var j=document.getElementById("10")
+    j.style.textDecoration="line-through"
     calculatedResult.value +=_10
 
 }
 function valueButton11 () {
     var calculatedResult=document.getElementById("screen")
+    var k=document.getElementById("11")
+    k.style.textDecoration="line-through"
     calculatedResult.value +=_11
 
 }
 function valueButton12 () {
     var calculatedResult=document.getElementById("screen")
+    var l=document.getElementById("12")
+    l.style.textDecoration="line-through"
     calculatedResult.value +=_12
 
 }
 function valueButton13 () {
     var calculatedResult=document.getElementById("screen")
+    var m=document.getElementById("13")
+    m.style.textDecoration="line-through"
     calculatedResult.value +=_13
 
 }
 function valueButton14 () {
     var calculatedResult=document.getElementById("screen")
+    var n=document.getElementById("14")
+    n.style.textDecoration="line-through"
     calculatedResult.value +=_14
 
 }
 function valueButton15 () {
     var calculatedResult=document.getElementById("screen")
+    var o=document.getElementById("15")
+    o.style.textDecoration="line-through"
     calculatedResult.value +=_15
 
 }
 function valueButton16 () {
     var calculatedResult=document.getElementById("screen")
+    var p=document.getElementById("16")
+    p.style.textDecoration="line-through"
     calculatedResult.value +=_16
 
 }
 function valueButton17 () {
     var calculatedResult=document.getElementById("screen")
+    var q=document.getElementById("17")
+    q.style.textDecoration="line-through"
     calculatedResult.value +=_17
 
 }
 function valueButton18 () {
     var calculatedResult=document.getElementById("screen")
+    var r=document.getElementById("18")
+    r.style.textDecoration="line-through"
     calculatedResult.value +=_18
 
 }
 function valueButton19 () {
     var calculatedResult=document.getElementById("screen")
+    var s=document.getElementById("19")
+    s.style.textDecoration="line-through"
     calculatedResult.value +=_19
 
 }
 function valueButton20 () {
     var calculatedResult=document.getElementById("screen")
+    var t=document.getElementById("20")
+    t.style.textDecoration="line-through"
     calculatedResult.value +=_20
 
 }
 function valueButton21 () {
     var calculatedResult=document.getElementById("screen")
+    var u=document.getElementById("21")
+    u.style.textDecoration="line-through"
     calculatedResult.value +=_21
 
 }
 function valueButton22 () {
     var calculatedResult=document.getElementById("screen")
+    var v=document.getElementById("22")
+    v.style.textDecoration="line-through"
     calculatedResult.value +=_22
 
 }
 function valueButton23 () {
     var calculatedResult=document.getElementById("screen")
+    var w=document.getElementById("23")
+    w.style.textDecoration="line-through"
     calculatedResult.value +=_23
 
 }
 function valueButton24 () {
     var calculatedResult=document.getElementById("screen")
+    var x=document.getElementById("24")
+    x.style.textDecoration="line-through"
     calculatedResult.value +=_24
 
 }
 function valueButton25 () {
     var calculatedResult=document.getElementById("screen")
+    var y=document.getElementById("25")
+    y.style.textDecoration="line-through"
     calculatedResult.value +=_25
 
 }
 function valueButton26 () {
     var calculatedResult=document.getElementById("screen")
+    var z=document.getElementById("26")
+    z.style.textDecoration="line-through"
     calculatedResult.value +=_26
 
 }
@@ -268,6 +313,8 @@ function valueButton26 () {
 
 var input =document.getElementById("screen").value;
 var points = 1
+var totalPoints;
+
 
 function submit () {
     var input =document.getElementById("screen").value;
@@ -276,17 +323,18 @@ function submit () {
 
     for (var k = 0; k < Dictonery.length; k++) {
         if (input === Dictonery[k]){
-            document.getElementById("point").innerText=points++
+            totalPoints = document.getElementById("point").innerText=points++
             document.getElementById("words").innerHTML+="." + input + "</br>"
 
         }
 
-        // else {
-        //     input !== Dictonery[k]
-        //     console.log("Not Correct")
+        // if (input !== Dictonery[k]){
+        //     alert("Not a Word")
         //     break;
-        // }
+        // } 
     }
+
+   displayPoints =document.getElementById("total").innerText="Total points you score are: " + totalPoints
 
 
     
@@ -315,26 +363,17 @@ function reset () {
 
 }
 
-
-
-
-
+var main=document.getElementById("main")
 
 
     
 function greeting(){
-    hide.style.display="none"
-    var text=document.getElementById("screen").value
-    document.getElementById("screen").value=""
-    document.getElementById("point").innerText=""
-    document.getElementById("words").innerText=""
-
-
+    main.style.display="none"
 
 
   }
   
-  setTimeout(greeting, 60000);
+  setTimeout(greeting, 30000);
 
 
     
